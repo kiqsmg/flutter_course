@@ -13,22 +13,27 @@ class QuestionsScreen extends StatefulWidget {
 class _QuestionsScreenState extends State<QuestionsScreen> {
   @override
   Widget build(context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 114, 72, 186),
-                Color.fromARGB(255, 95, 42, 188),
-              ],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-          ),
-          child: const StartScreen(),
+    return Column(
+      children: [
+        const Text('The questions...'),
+        const SizedBox(height: 30),
+        ElevatedButton(
+          onPressed: () {},
+          child: const Text('Answer 1'),
         ),
-      ),
+        ElevatedButton(
+          onPressed: () {},
+          child: const Text('Answer 2'),
+        ),
+        ElevatedButton(
+          onPressed: () {},
+          child: const Text('Answer 3'),
+        ),
+        ElevatedButton(
+          onPressed: () {},
+          child: const Text('Answer 4'),
+        ),
+      ],
     );
   }
 }
